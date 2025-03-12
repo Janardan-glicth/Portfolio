@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">JD</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Janardan Upreti</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./img/pvp.jpg" alt="PFP" style="width: 900px; height: 400px;" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Janardan Upreti</h1>
+      <p class="section__text__p2">Frontend Developer</p>
+      <div class="btn-container">
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="./img/link.png" alt="My LinkedIn profile" class="icon"
+          onclick="location.href='https://www.linkedin.com/in/janardan-upreti-4b75b7334/'" />
+        <img src="./img/git.png" alt="My Github profile" class="icon"
+          onclick="location.href='https://github.com/Janardan-glicth'" />
+          <img src="./img/insta.png" alt="My Insta profile" class="icon"
+          onclick="location.href='https://www.instagram.com/janardan.upreti/'" />
+          <img src="./img/face.png" alt="My Facebook profile" class="icon"
+          onclick="location.href='https://www.facebook.com/janardan.upreti.98'" />
+
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1">Get To Know Me</p>
+    <h1 class="title">About Myself</h1>
+    <div class="section-container">
+
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./img/front.png" alt="skills icon" class="icon" />
+            <h3>Skills</h3>
+            <p>Frontend Development</p>
+
+          </div>
+          <div class="details-container">
+            <img src="./img/edu.png" alt="Education icon" class="icon" />
+            <h3>Education</h3>
+            <p>BIT
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+
+Hello! I'm Janardan Upreti, a passionate and dedicated student pursuing a Bachelor of Information Technology (BIT). With a deep enthusiasm for technology, web development, and algorithmic problem-solving, I continuously seek opportunities to expand my technical expertise.
+
+My journey in technology is driven by curiosity and a desire to create impactful digital solutions. I actively develop projects that showcase my growing capabilities, including this portfolio where I demonstrate my work, technical achievements, and professional aspirations. 
+
+Through hands-on experience and academic learning, I've cultivated strong analytical and creative thinking skills. My goal is to leverage these abilities to contribute meaningfully to innovative tech solutions and build a fulfilling career in the IT industry where I can solve real-world problems through technology.
+
+I remain committed to staying at the forefront of technological advancements, constantly learning new frameworks, programming languages, and development methodologies to enhance my professional toolkit.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="skills">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Skills</h1>
+    <div class="skills-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="skills-sub-title">Frontend Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="./img/ht.png" alt="skills icon" class="icon" />
+              <div>
+                <h3>HTML</h3>
+                <p>Skills</p>
+              </div>
+            </article>
+            <article>
+              <img src="./img/CSS.png" alt="skills icon" class="icon" />
+              <div>
+                <h3>CSS</h3>
+                <p>Skills</p>
+              </div>
+            </article>
+            <article>
+              <img src="./img/js.png" alt="skills icon" class="icon" />
+              <div>
+                <h3>JavaScript</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="skills-sub-title">Frontend Development</h2>
+          <div class="article-container">
+            <article>
+            <article>
+              <img src="./img/git.png" alt="skills icon" class="icon" />
+              <div>
+                <h3>Git</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./img/mail.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <span class="email-text">jdupreti123@gmail.com</span>
+      </div>
+      <div class="contact-info-container">
+        <img src="./img/link.png" alt= My LinkedIn profile class="icon"
+          onclick="location.href='https://www.linkedin.com/in/janardan-upreti-4b75b7334/'" />
+      </div>
+    </div>
+
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2025 Janardan Upreti. All Rights Reserved.</p>
+  </footer>
+  <script src="./script.js"></script>
+</body>
+
+</html>
